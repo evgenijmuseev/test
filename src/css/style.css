@@ -26,6 +26,11 @@ body {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #24b55e;
 }
 
 ul {
@@ -47,6 +52,9 @@ input {
   border: 1px solid #C7C6C4;
   border-radius: 5px;
   padding: 18px;
+}
+input:focus {
+  color: #20A053;
 }
 
 .nav {
@@ -306,6 +314,49 @@ input {
     font-size: 1rem;
   }
 }
+@media (min-width: 320px) and (max-width: 1120px) {
+  .clean-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clean-form .input-room {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+  .clean-form .input-bathroom {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+  .clean-form .input-phone {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .clean__button {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .clean-form .input-room {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .clean-form .input-bathroom {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .clean-form .input-phone {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .clean__button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 .features-block {
   padding: 30px;
   background-color: #ffffff;
@@ -326,8 +377,8 @@ input {
 }
 .features-item {
   padding-left: 10px;
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   padding-right: 10px;
   min-height: 180px;
 }

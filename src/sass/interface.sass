@@ -21,6 +21,9 @@ body
     border: none
     color: $light-color
     cursor: pointer
+    transition: 0.3s
+    &:hover
+        background-color: lighten($active-color, 5%)
 
 ul
     padding: 0
@@ -38,6 +41,8 @@ input
     border: 1px solid $text-color
     border-radius: 5px
     padding: 18px
+    &:focus
+        color: $active-color
 
 @mixin second-title()
     font-weight: 500

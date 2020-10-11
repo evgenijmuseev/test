@@ -75,3 +75,31 @@
             font-size: 2rem
         &__subtitle
             font-size: 1rem
+
+@media (min-width: 320px) and (max-width: 1120px)
+    .clean
+        &-form
+            flex-wrap: wrap
+            .input-room
+                flex-basis: 48%
+                margin-bottom: 30px
+            .input-bathroom
+                flex-basis: 48%
+                margin-bottom: 30px
+            .input-phone
+                flex-basis: 48%
+        &__button
+            flex-basis: 48%
+
+@media (min-width: 320px) and (max-width: 576px)
+    .clean
+        &-form
+            .input-room
+                flex-basis: 100%
+            .input-bathroom
+                flex-basis: 100%
+            .input-phone
+                flex-basis: 100%
+                margin-bottom: 30px
+        &__button
+            flex-basis: 100%
