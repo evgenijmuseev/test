@@ -1,0 +1,77 @@
+.clean
+    padding-top: 80px
+    padding-bottom: 80px
+    background-color: $light-color
+    &-form
+        margin-top: 50px
+        padding: 20px
+        border-radius: 5px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: #f8f8f8
+        .input-room
+            border: 1px solid $text-color
+            border-radius: 5px
+            padding: 18px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 270px
+            background-color: $light-color
+            div
+                margin: 0px 30px
+                .counter-room
+                    border: none
+                    outline: none
+                    padding: 0
+                    background-color: $light-color
+                    width: 15px
+            button
+                background-color: transparent
+                border: none
+                padding: 0
+                cursor: pointer
+                outline: none
+        .input-bathroom
+            border: 1px solid $text-color
+            border-radius: 5px
+            padding: 18px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 270px
+            background-color: $light-color
+            div
+                margin: 0px 30px
+                .counter-bathroom
+                    border: none
+                    outline: none
+                    padding: 0
+                    background-color: $light-color
+                    width: 15px
+            button
+                background-color: transparent
+                border: none
+                padding: 0
+                cursor: pointer
+                outline: none
+    &__title
+        text-align: center
+        font-size: 3rem
+        margin-bottom: 25px
+        font-weight: 700
+        color: $dark-color
+    &__subtitle
+        @include second-title
+        text-align: center
+        span
+            text-decoration: underline
+            color: $active-color 
+
+@media (min-width: 320px) and (max-width: 768px)
+    .clean
+        &__title
+            font-size: 2rem
+        &__subtitle
+            font-size: 1rem

@@ -1,0 +1,48 @@
+html
+    font-size: 16px
+
+body
+    padding: 0
+    margin: 0
+    font-family: 'Roboto', sans-serif
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    width: 95%
+
+.button
+    background-color: $active-color
+    border-radius: 5px
+    padding: 18px 32px
+    border: none
+    color: $light-color
+    cursor: pointer
+
+ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+a
+    text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+
+input
+    border: 1px solid $text-color
+    border-radius: 5px
+    padding: 18px
+
+@mixin second-title()
+    font-weight: 500
+    color: $dark-color
+
+@mixin text-style()
+    font-size: 1rem
+    color: $text-color

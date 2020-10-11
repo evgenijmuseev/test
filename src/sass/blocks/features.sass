@@ -1,0 +1,88 @@
+.features
+    &-block
+        padding: 30px
+        background-color: $light-color
+        border-radius: 8px
+        box-shadow: 0px 0px 5px 0px rgba(34,34,2,0.32)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: start
+    &-item
+        padding-left: 10px
+        flex-basis: 24%
+        padding-right: 10px
+        min-height: 180px
+        &__title
+            @include second-title
+            margin-top: 15px
+            margin-bottom: 10px
+        &__descr
+            @include text-style
+        &:not(:nth-child(4))
+            border-right: 1px solid #f0f0f0
+        &:nth-child(8)
+            border-right: 0
+        &:nth-child(1)
+            border-bottom: 1px solid #f0f0f0
+            padding-bottom: 20px
+        &:nth-child(2)
+            border-bottom: 1px solid #f0f0f0
+            padding-bottom: 20px
+        &:nth-child(3)
+            border-bottom: 1px solid #f0f0f0
+            padding-bottom: 20px
+        &:nth-child(4)
+            border-bottom: 1px solid #f0f0f0
+            padding-bottom: 20px
+        &:nth-child(5)
+            padding-top: 30px
+        &:nth-child(6)
+            padding-top: 30px
+        &:nth-child(7)
+            padding-top: 30px
+        &:nth-child(8)
+            padding-top: 30px
+            
+@media (min-width: 320px) and (max-width: 992px)
+    .features
+        &-item
+            flex-basis: 45%
+            &:nth-child(1)
+                border: none
+            &:nth-child(2)
+                border: none
+            &:nth-child(3)
+                border: none
+            &:nth-child(4)
+                border: none
+            &:nth-child(5)
+                border: none
+            &:nth-child(6)
+                border: none
+            &:nth-child(7)
+                border: none
+            &:nth-child(8)
+                border: none
+
+@media (min-width: 320px) and (max-width: 576px)
+    .features
+        &-item
+            flex-basis: 100%
+            max-height: auto
+            &:nth-child(1)
+                padding-bottom: 0px
+            &:nth-child(2)
+                padding-bottom: 0px
+            &:nth-child(3)
+                padding-bottom: 0px
+            &:nth-child(4)
+                padding-bottom: 0px
+            &:nth-child(5)
+                padding-top: 0px
+            &:nth-child(6)
+                padding-top: 0px
+            &:nth-child(7)
+                padding-top: 0px
+            &:nth-child(8)
+                padding-top: 0px

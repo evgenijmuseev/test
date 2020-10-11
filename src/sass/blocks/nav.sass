@@ -1,0 +1,92 @@
+.nav
+    padding-top: 15px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-menu
+        padding-bottom: 15px
+        border-bottom: 1px solid #f0f0f0
+        display: flex
+        justify-content: start
+        align-items: center
+        &__item
+            &:not(:last-child)
+                margin-right: 30px
+            a
+                font-size: 1.125rem
+                color: $dark-color
+                transition: 0.3s
+                &:hover
+                    color: $active-color
+    &-mobile
+        display: none
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding-top: 50px
+        padding-bottom: 30px
+        border-bottom: 1px solid #f0f0f0
+        &__item
+            &:not(:last-child)
+                margin-bottom: 20px
+            a
+                font-size: 1.125rem
+                color: $dark-color
+                transition: 0.3s
+                &:hover
+                    color: $active-color
+    .menu-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        display: none
+        span
+            width: 30px 
+            height: 2px
+            background-color: $active-color
+            &::after
+                content: ""
+                transition: 0.3s
+                display: block
+                width: 30px 
+                height: 2px
+                background-color: $active-color
+                transform: translateY(6px)
+            &::before
+                content: ""
+                transition: 0.3s
+                display: block
+                width: 30px 
+                height: 2px
+                background-color: $active-color
+                transform: translateY(-9px)
+
+.menu-btn.active-menu-btn
+    span
+        height: 0
+        &::after
+            content: ""
+            display: block
+            width: 30px 
+            height: 2px
+            background-color: $active-color
+            transform: translateY(0px) rotate(45deg)
+        &::before
+            content: ""
+            display: block
+            width: 30px 
+            height: 2px
+            background-color: $active-color
+            transform: translateY(2px) rotate(-45deg)
+
+.nav-mobile.active-menu
+    display: flex
+
+@media (min-width: 320px) and (max-width: 768px)
+    .nav
+        .menu-btn
+            display: flex
+            margin-left: auto
+        &-menu
+            display: none
