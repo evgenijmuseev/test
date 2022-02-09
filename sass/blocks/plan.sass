@@ -1,0 +1,158 @@
+.plan
+    margin-top: 20px
+    display: flex
+    justify-content: space-between
+    align-self: start
+    flex-wrap: wrap
+    gap: 23px
+    &-popup
+        position: absolute
+        top: 105%
+        margin-top: 6px
+        left: 30px
+        width: 100%
+        min-width: 270px
+        font-size: 14px
+        background-color: #2D2D2D
+        opacity: 0
+        transition: 0.4s
+        color: $light-color
+        padding: 12px 18px
+        z-index: 100
+        text-align: center
+        &::before
+            content: ''
+            position: absolute
+            background-color: #2D2D2D
+            opacity: 0.7
+            bottom: 70%
+            height: 16px
+            width: 16px
+            transform: rotate(45deg)
+    &-item
+        border: 1px solid black
+        padding: 20px
+        flex-basis: calc(50% - 12px)
+        border: 1px solid #E5E5E5
+        background-color: $light-color
+        padding: 25px 25px 25px 66px
+        position: relative
+        &-footer
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            &__address
+                line-height: 150%
+                font-size: 14px
+                color: $black-color
+                max-width: 235px
+                display: flex
+                justify-content: start
+                align-items: start
+                img
+                    margin-top: 3px
+                    margin-right: 6px
+            &__date
+                span
+                    font-size: 13px
+                    color: #9B9B9B
+        &-header
+            @include flex-start
+            margin-bottom: 6px
+            &__type 
+                @include flex-start
+                padding: 5px 16px
+                border-radius: 32px
+                box-shadow: 0px 0px 2px rgba(94, 119, 157, 0.25)
+                cursor: pointer
+                position: relative
+                img
+                    margin-right: 6px
+                span
+                    font-size: 12px
+            &__price 
+                color: $red-color
+                font-size: 15px
+                font-weight: 700
+                margin-right: 16px
+        &__place
+            font-size: 14px
+            color: #808080
+            margin-bottom: 6px
+            span
+                color: $black-color
+        &-info
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-data
+                display: flex
+                justify-content: start
+                align-items: start
+                &__item
+                    display: flex
+                    justify-content: start
+                    align-items: start
+                    flex-direction: column
+                    span
+                        font-size: 14px
+                        line-height: 25px
+                    &:not(:last-child)
+                        padding-right: 20px
+                        margin-right: 20px
+                        border-right: 1px solid #C4C4C4
+    &-status
+        position: absolute
+        top: 22px
+        right: 0px
+        padding: 6px 9px
+        display: flex
+        justify-content: start
+        align-items: center
+        p
+            font-size: 14px
+        span
+            display: flex
+            width: 6px
+            height: 6px
+            border-radius: 6px
+            margin-right: 8px
+    &__checkbox
+        position: absolute
+        top: 50%
+        left: 25px 
+        transform: translateY(-50%)
+
+
+.plan-status-4
+    background-color: #CCCCCC
+    span
+        background-color: #808080
+    p
+        color: #808080
+
+.plan-status-3
+    background-color: #EDEDED
+    span
+        background-color: #686868
+    p
+        color: #686868
+    
+.plan-status-2
+    background-color: #D6F5FF
+    span
+        background-color: #0291C1
+    p
+        color: #0291C1
+    
+.plan-status-1
+    background-color: #FFE4E4
+    span
+        background-color: #DD4C5D
+    p
+        color: #DD4C5D
+    
+
+.plan-item-header__type:hover
+    .plan-popup
+        opacity: 0.7

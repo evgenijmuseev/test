@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тестовое задание</title>
+</head>
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="nav"> 
+                <div class="nav-search">
+                    <input type="text" class="input nav-search__input" placeholder="Введите ЖК / корпус / № квартиры / № паркинга">
+                    <div class="select">
+                        <div class="select__header">
+                            <span class="select__current">Все статусы</span>
+                            <!-- /.select__current -->
+                            <img src="img/nav/select.svg" alt="show/close icon" class="select__icon">
+                        </div>
+                        <!-- /.select__header -->
+                        <div class="select__body">
+                            <div class="select__item">
+                                <label for="input-checkbox-5" class="input-checkbox__label">
+                                    <input 
+                                        type="checkbox" 
+                                        id="input-checkbox-5"
+                                        class="input-checbox__none">
+                                    <span class="input__checkbox select__checkbox"></span>
+                                    <span class="select__text">Забронировано</span>
+                                </label>
+                            </div>
+                            <!-- /.select__item -->
+                            <div class="select__item">
+                                <label for="input-checkbox-6" class="input-checkbox__label">
+                                    <input 
+                                        type="checkbox" 
+                                        id="input-checkbox-6"
+                                        class="input-checbox__none">
+                                    <span class="input__checkbox select__checkbox"></span>
+                                    <span class="select__text">Продано</span>
+                                </label>
+                            </div>
+                            <!-- /.select__item -->
+                            <div class="select__item">
+                                <label for="input-checkbox-7" class="input-checkbox__label">
+                                    <input 
+                                        type="checkbox" 
+                                        id="input-checkbox-7"
+                                        class="input-checbox__none">
+                                    <span class="input__checkbox select__checkbox"></span>
+                                    <span class="select__text">Активно</span>
+                                </label>
+                            </div>
+                            <!-- /.select__item -->
+                        </div>
+                        <!-- /.select__body -->
+                    </div>
+                    <!-- /.select -->
+                    <!-- <select class="nav-search__select">
+                        <option value="Все статусы">Все статусы</option>
+                        <option value="Забронировано">Забронировано</option>
+                        <option value="Продано">Продано</option>
+                        <option value="Активно">Активно</option>
+                    </select> -->
+                    <button class="button nav__button nav-search__button">Очистить корзину <img src="img/nav/clean.svg" alt="clean-icon"></button>
+                    <!-- /.button nav__button -->
+                </div>
+                <!-- /.nav-search-panel -->
+                <div class="nav-buttons">
+                    <label for="input-checkbox-all" class="input-checkbox__label">
+                        <input 
+                            type="checkbox" 
+                            id="input-checkbox-all"
+                            class="nav-buttons__checkbox input-checbox__none">
+                        <span class="nav-buttons__fake input__checkbox"></span>
+                        <span class="nav-buttons__span">Все</span>
+                    </label>
+                    <button class="button nav__button nav-buttons__save">Сохранить <img src="img/nav/save.svg" alt="save-icon"></button>
+                    <!-- /.button -->
+                    <button class="button nav__button nav-buttons__send">Отправить <img src="img/nav/send.svg" alt="send-icon"></button>
+                    <!-- /.button -->
+                    <button class="button nav__button nav-buttons__remove">Удалить <img src="img/nav/bin.svg" alt="remove-icon"></button>
+                    <!-- /.button -->
+                </div>
+                <!-- /.nav-buttons -->
+            </div>
+            <!-- /.nav -->
+            <section class="plan">
+                <div class="plan-item">
+                    <div class="plan-item-header">
+                        <span class="plan-item-header__price">7 733 300 руб.</span>
+                        <!-- /.plan-item-header__price -->
+                        <div class="plan-item-header__type">
+                            <img src="img/plan/floorplan.svg" alt="plan-icon">
+                            <span>Квартира</span>
+                            <div class="plan-popup">Подземная встроенно-пристроенная</div>
+                            <!-- /.plan-popup -->
+                        </div>
+                        <!-- /.plan-item-header__type -->
+                    </div>
+                    <!-- /.plan-item-header -->
+                    <div class="plan-item__place">
+                        <p><span>Чистое Небо,</span> корпус 10, III кв. 2022 г.</p>
+                    </div>
+                    <div class="plan-item-info">
+                        <div class="plan-item-info-data">
+                            <div class="plan-item-info-data__item">
+                                <span>кв. 62</span>
+                                <span>1 комн. кв.</span>
+                            </div>
+                            <div class="plan-item-info-data__item">
+                                <span>234.38 м²</span>
+                                <span>7 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/plan/plan.png" alt="Планировка">
+                    </div>
+                    <!-- /.plan-item-info -->
+                    <div class="plan-item-footer">
+                        <div class="plan-item-footer__address">
+                            <img src="img/plan/point.svg" alt="point-icon">
+                            <span>Лен. область, Всеволожский район,
+                                д. Кудрово, ул. Столичная, д. 5, к. 1</span>
+                        </div>
+                        <!-- /.plan-item-footer__address -->
+                        <div class="plan-item-footer__date">
+                            <span>Добавлено 21/11/2020</span>
+                        </div>
+                        <!-- /.plan-item-footer__date -->
+                    </div>
+                    <!-- /.plan-item-footer -->
+                    <div class="plan-status plan-status-1">
+                        <span></span>
+                        <p>Уступка от юр. лица</p>
+                    </div>
+
+                    <label for="input-checkbox-1" class="input-checkbox__label plan__checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="input-checkbox-1"
+                            class="input-checbox__none">
+                        <span class="input__checkbox"></span>
+                    </label>
+                </div>
+                <!-- /.plan-item -->
+
+                <div class="plan-item">
+                    <div class="plan-item-header">
+                        <span class="plan-item-header__price">7 733 300 руб.</span>
+                        <!-- /.plan-item-header__price -->
+                        <div class="plan-item-header__type">
+                            <img src="img/plan/floorplan.svg" alt="plan-icon">
+                            <span>Квартира</span>
+                            <div class="plan-popup">Подземная встроенно-пристроенная</div>
+                            <!-- /.plan-popup -->
+                        </div>
+                        <!-- /.plan-item-header__type -->
+                    </div>
+                    <!-- /.plan-item-header -->
+                    <div class="plan-item__place">
+                        <p><span>Чистое Небо,</span> корпус 10, III кв. 2022 г.</p>
+                    </div>
+                    <div class="plan-item-info">
+                        <div class="plan-item-info-data">
+                            <div class="plan-item-info-data__item">
+                                <span>кв. 62</span>
+                                <span>1 комн. кв.</span>
+                            </div>
+                            <div class="plan-item-info-data__item">
+                                <span>234.38 м²</span>
+                                <span>7 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/plan/plan.png" alt="Планировка">
+                    </div>
+                    <!-- /.plan-item-info -->
+                    <div class="plan-item-footer">
+                        <div class="plan-item-footer__address">
+                            <img src="img/plan/point.svg" alt="point-icon">
+                            <span>Лен. область, Всеволожский район,
+                                д. Кудрово, ул. Столичная, д. 5, к. 1</span>
+                        </div>
+                        <!-- /.plan-item-footer__address -->
+                        <div class="plan-item-footer__date">
+                            <span>Добавлено 21/11/2020</span>
+                        </div>
+                        <!-- /.plan-item-footer__date -->
+                    </div>
+                    <!-- /.plan-item-footer -->
+                    <div class="plan-status plan-status-2">
+                        <span></span>
+                        <p>Уступка от физ. лица</p>
+                    </div>
+
+                    <label for="input-checkbox-2" class="input-checkbox__label plan__checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="input-checkbox-2"
+                            class="input-checbox__none">
+                        <span class="input__checkbox"></span>
+                    </label>
+                </div>
+                <!-- /.plan-item -->
+
+                <div class="plan-item">
+                    <div class="plan-item-header">
+                        <span class="plan-item-header__price">800 300 руб.</span>
+                        <!-- /.plan-item-header__price -->
+                        <div class="plan-item-header__type">
+                            <img src="img/plan/car.svg" alt="plan-icon">
+                            <span>Паркинг</span>
+                            <div class="plan-popup">Подземная встроенно-пристроенная</div>
+                            <!-- /.plan-popup -->
+                        </div>
+                        <!-- /.plan-item-header__type -->
+                    </div>
+                    <!-- /.plan-item-header -->
+                    <div class="plan-item__place">
+                        <p><span>Чистое Небо,</span> корпус 10, III кв. 2022 г.</p>
+                    </div>
+                    <div class="plan-item-info">
+                        <div class="plan-item-info-data">
+                            <div class="plan-item-info-data__item">
+                                <span>кв. 62</span>
+                                <span>1 комн. кв.</span>
+                            </div>
+                            <div class="plan-item-info-data__item">
+                                <span>234.38 м²</span>
+                                <span>7 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/plan/plan.png" alt="Планировка">
+                    </div>
+                    <!-- /.plan-item-info -->
+                    <div class="plan-item-footer">
+                        <div class="plan-item-footer__address">
+                            <img src="img/plan/point.svg" alt="point-icon">
+                            <span>Лен. область, Всеволожский район,
+                                д. Кудрово, ул. Столичная, д. 5, к. 1</span>
+                        </div>
+                        <!-- /.plan-item-footer__address -->
+                        <div class="plan-item-footer__date">
+                            <span>Добавлено 21/11/2020</span>
+                        </div>
+                        <!-- /.plan-item-footer__date -->
+                    </div>
+                    <!-- /.plan-item-footer -->
+                    <div class="plan-status plan-status-3">
+                        <span></span>
+                        <p>Забронировано</p>
+                    </div>
+
+                    <label for="input-checkbox-3" class="input-checkbox__label plan__checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="input-checkbox-3"
+                            class="input-checbox__none">
+                        <span class="input__checkbox"></span>
+                    </label>
+                </div>
+                <!-- /.plan-item -->
+
+                <div class="plan-item">
+                    <div class="plan-item-header">
+                        <span class="plan-item-header__price">800 300 руб.</span>
+                        <!-- /.plan-item-header__price -->
+                        <div class="plan-item-header__type">
+                            <img src="img/plan/car.svg" alt="plan-icon">
+                            <span>Паркинг</span>
+                            <div class="plan-popup">Подземная встроенно-пристроенная</div>
+                            <!-- /.plan-popup -->
+                        </div>
+                        <!-- /.plan-item-header__type -->
+                    </div>
+                    <!-- /.plan-item-header -->
+                    <div class="plan-item__place">
+                        <p><span>Чистое Небо,</span> корпус 10, III кв. 2022 г.</p>
+                    </div>
+                    <div class="plan-item-info">
+                        <div class="plan-item-info-data">
+                            <div class="plan-item-info-data__item">
+                                <span>кв. 62</span>
+                                <span>1 комн. кв.</span>
+                            </div>
+                            <div class="plan-item-info-data__item">
+                                <span>234.38 м²</span>
+                                <span>7 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/plan/plan.png" alt="Планировка">
+                    </div>
+                    <!-- /.plan-item-info -->
+                    <div class="plan-item-footer">
+                        <div class="plan-item-footer__address">
+                            <img src="img/plan/point.svg" alt="point-icon">
+                            <span>Лен. область, Всеволожский район,
+                                д. Кудрово, ул. Столичная, д. 5, к. 1</span>
+                        </div>
+                        <!-- /.plan-item-footer__address -->
+                        <div class="plan-item-footer__date">
+                            <span>Добавлено 21/11/2020</span>
+                        </div>
+                        <!-- /.plan-item-footer__date -->
+                    </div>
+                    <!-- /.plan-item-footer -->
+                    <div class="plan-status plan-status-4">
+                        <span></span>
+                        <p>Продано</p>
+                    </div>
+
+                    <label for="input-checkbox-4" class="input-checkbox__label plan__checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="input-checkbox-4"
+                            class="input-checbox__none">
+                        <span class="input__checkbox"></span>
+                    </label>
+                </div>
+                <!-- /.plan-item -->
+            </section>
+            <!-- /.plan -->
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.main -->
+    
+<script src="js//index.js"></script>
+</body>
+</html>
